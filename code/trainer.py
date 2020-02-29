@@ -257,7 +257,7 @@ class GANTrainer(object):
             noise = noise.cuda()
         count = 0
         while count < num_embeddings:
-            if count > 3000:
+            if count > 30000:
                 break
             iend = count + batch_size
             if iend > num_embeddings:
